@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Cotação de Moedas</h1>
+        <div class="input-container">
+            <label for="valor">Digite o valor em Real Brasileiro (BRL):</label>
+            <input type="number" id="valor" placeholder="Digite o valor">
+
+        </div>
+        <div class="select-container">
+            <label for="mDestino">Selecione a moeda desejada:</label>
+            <select id="mDestino">
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <option value="AUD">Dólar Australiano (AUD)</option>
+                <option value="CHF">Franco Suíço (CHF)</option>
+                <option value="CNY">Yuan Chinês (CNY)</option>
+                <option value="SEK">Coroa Sueca (SEK)</option>
+                <option value="NZD">Dólar Neozelandês (NZD)</option>
+            </select>
+        </div>
+        <button onclick="converter()">Converter</button>
+        <div id="resultado">
+            Resultado: <span id="vConvertido"></span>
+        </div>
+        <div id="dataHora" class="dataHora"></div>
+    </div>
+</body>
+
+</html>
